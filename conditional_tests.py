@@ -2,8 +2,8 @@
 
 # You will need to supply the following information.
 
-# Name:
-# Section:
+# Name: Joshua Smith
+# Section: 07
 
 import unittest
 from conditional import *

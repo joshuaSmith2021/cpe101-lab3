@@ -8,8 +8,6 @@
 
 import unittest
 from logic import *
-from logic import in_an_interval
-from logic import is_odd
 
 #You can dlete pass after wrinting your code
 class TestCases(unittest.TestCase):
@@ -45,6 +43,12 @@ class TestCases(unittest.TestCase):
       self.assertTrue(in_an_interval(110))
       self.assertTrue(in_an_interval(237))
       self.assertFalse(in_an_interval(1240))
+
+   def test_is_divisible_in_interval(self):
+      self.assertFalse(is_divisible_in_interval(80, 20))
+      self.assertTrue(is_divisible_in_interval(100, 50))
+      self.assertFalse(is_divisible_in_interval(85, 35))
+      self.assertFalse(is_divisible_in_interval(55, 32))
 
 
 # Run the unit tests.

@@ -45,6 +45,9 @@ class TestCases(unittest.TestCase):
       self.assertFalse(in_an_interval(1240))
 
    def test_is_divisible_in_interval(self):
+      # Testing is_divisible_in_interval which determiness 
+      # if first number is divisible by second number and
+      # that both numbers lie whithin a given range.
       self.assertFalse(is_divisible_in_interval(80, 20))
       self.assertTrue(is_divisible_in_interval(100, 50))
       self.assertFalse(is_divisible_in_interval(85, 35))

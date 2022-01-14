@@ -8,6 +8,8 @@
 import unittest
 from math import e, pi
 from conditional import *
+from conditional import min_of_2
+from conditional import min_of_3
 
 #You can delete pass after wrinting your code
 class TestCases(unittest.TestCase):
@@ -16,6 +18,7 @@ class TestCases(unittest.TestCase):
       self.assertEqual(min_of_2(4, 6), 4)
       self.assertEqual(min_of_2(-12, -24), -24)
       self.assertAlmostEqual(min_of_2(e * pi, 60), 8.53973422267)
+      self.assertEqual(min_of_2(0, 0), 0)
 
    def test_min_of_3(self):
       # Testing min_of_3 which determines smallest of three numbers
@@ -24,6 +27,7 @@ class TestCases(unittest.TestCase):
       self.assertEqual(min_of_3(0, 1, 0), 0)
       self.assertEqual(min_of_3(-1, 0, 0), -1)
       self.assertEqual(min_of_3(pi * e, 0, 14), 0)
+      self.assertAlmostEqual(min_of_3(0, 0, 0), 0)
 
    def test_rental_late_fee(self):
       # Testing rental_late_fee which determines late fee based on days late

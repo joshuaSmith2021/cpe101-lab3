@@ -8,8 +8,6 @@
 import unittest
 from math import e, pi
 from conditional import *
-from conditional import min_of_2
-from conditional import min_of_3
 
 #You can delete pass after wrinting your code
 class TestCases(unittest.TestCase):
